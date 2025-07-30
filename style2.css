@@ -4,6 +4,10 @@ html {
   font-family: sans-serif;
 }
 
+:root {
+  color-scheme: var(--light-grey);
+}
+
 body {
   margin: 0;
 }
