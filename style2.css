@@ -8,6 +8,14 @@ html {
   color-scheme: var(--light-grey);
 }
 
+@media (prefers-color-scheme: dark) {
+  /* Перекрываем возможные стили от Webflow или браузера */
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+}
+
 body {
   margin: 0;
 }
