@@ -5202,32 +5202,10 @@ blockquote {
 
   .size-btn, .size-btn.xs {
     cursor: pointer;
-  border: 2px solid #000;
-  width: 55px;
-  height: 50px;
-  padding: 8px 18px;
-  background-color: white;
-  color: #333;
-  font-size: 16px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  }
 
-/* Специальные отступы для XS */
-.size-btn.xs {
-  padding-left: 14px;
-  padding-right: 14px;
-}
-
-/* Активная кнопка */
-.size-btn.active {
-  background-color: #333;
-  color: #fff;
-  border-color: #000;
+  .size-btn.xs:active {
+    border-width: 2px;
   }
 
   .p-1, .smaill-print {
@@ -6201,7 +6179,7 @@ blockquote {
   .link-blocks {
     z-index: 1;
     flex-flow: column;
-    margin-top: 25px;
+    margin-top: 75px;
     margin-left: 191px;
     margin-right: auto;
     font-size: 22px;
@@ -6212,7 +6190,8 @@ blockquote {
   .glass-bg {
     z-index: 0;
     background-color: #ffffff80;
-    height: 550px;
+    height: 380px;
+    margin-top: 190px;
     display: block;
     inset: -14% 0% auto;
     transform: none;
@@ -6911,7 +6890,11 @@ blockquote {
   }
 
   .link-blocks {
-    margin-top: 25px;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    flex: 0 auto;
+    height: 300px;
+    margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 0;
@@ -6920,7 +6903,9 @@ blockquote {
   }
 
   .glass-bg {
-    height: 500px;
+    background-color: #ffffff80;
+    height: 350px;
+    margin-top: 180px;
     display: block;
   }
 
