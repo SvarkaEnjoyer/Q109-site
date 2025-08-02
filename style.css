@@ -3561,25 +3561,6 @@ blockquote {
   display: flex;
 }
 
-.size-btn {
-  cursor: pointer;
-  border: 1.5px solid #000;
-  width: 55px;
-  height: 50px;
-  padding: 8px 18px;
-}
-
-.size-btn.xs {
-  cursor: pointer;
-  padding-left: 14px;
-  padding-right: 14px;
-}
-
-.size-btn.xs:active, .size-btn.xs:focus {
-  border-width: 2px;
-  padding-top: 7px;
-  padding-left: 13px;
-}
 
 .size {
   font-family: "Retron 2000", Arial, sans-serif;
@@ -5199,13 +5180,35 @@ blockquote {
     margin-top: 120px;
   }
 
-  .size-btn, .size-btn.xs {
-    cursor: pointer;
-  }
+.size-btn {
+  cursor: pointer;
+  border: 2px solid #000;
+  width: 55px;
+  height: 50px;
+  padding: 8px 18px;
+  background-color: white;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .size-btn.xs:active {
-    border-width: 2px;
-  }
+/* Специальные отступы для XS */
+.size-btn.xs {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+/* Активная кнопка */
+.size-btn.active {
+  background-color: #333;
+  color: #fff;
+  border-color: #000;
+}
 
   .p-1, .smaill-print {
     max-width: 390px;
@@ -7034,4 +7037,5 @@ blockquote {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 }
+
 
