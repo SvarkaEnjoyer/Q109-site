@@ -5195,6 +5195,9 @@ blockquote {
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-tap-highlight-color: transparent; /* Убирает подсветку при тапе на мобильных */
+  user-select: none; /* Запрещает выделение текста при клике */
+  touch-action: manipulation; /* Улучшает обработку касаний */
 }
 
 /* Специальные отступы для XS */
@@ -5208,6 +5211,11 @@ blockquote {
   background-color: #333;
   color: #fff;
   border-color: #000;
+}
+
+/* Состояние при нажатии (для анимации) */
+.size-btn:active {
+  transform: scale(0.98); /* Легкое уменьшение при нажатии */
 }
 
   .p-1, .smaill-print {
@@ -7037,5 +7045,6 @@ blockquote {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 }
+
 
 
