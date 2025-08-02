@@ -5180,60 +5180,31 @@ blockquote {
     margin-top: 120px;
   }
 
+/* Полный сброс и принудительные стили */
+.size-btn, .size-btn * {
+  all: unset !important; /* Ядерный сброс */
+}
+
 .size-btn {
-  cursor: pointer;
-  border: 2px solid #000;
-  width: 55px;
-  height: 50px;
-  padding: 8px 18px;
-  background-color: white;
-  color: #333;
-  font-size: 16px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-tap-highlight-color: transparent; /* Убирает подсветку при тапе на мобильных */
-  user-select: none; /* Запрещает выделение текста при клике */
-  touch-action: manipulation; /* Улучшает обработку касаний */
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 50px !important;
+  height: 50px !important;
+  padding: 0 15px !important;
+  border: 2px solid #000 !important;
+  background: white !important;
+  color: #333 !important;
+  font: 500 16px/1.5 sans-serif !important;
+  cursor: pointer !important;
+  -webkit-tap-highlight-color: transparent !important;
+  box-sizing: border-box !important;
+  margin: 2px !important;
 }
 
-/* Специальные отступы для XS */
-.size-btn.xs {
-  padding-left: 14px;
-  padding-right: 14px;
-}
-
-/* Активная кнопка */
 .size-btn.active {
-  background-color: #333;
-  color: #fff;
-  border-color: #000;
-}
-
-/* Состояние при нажатии (для анимации) */
-.size-btn:active {
-  transform: scale(0.98); /* Легкое уменьшение при нажатии */
-}
-
-  /* Исправление специально для мобильных */
-@media (max-width: 768px) {
-  .size-btn {
-    min-width: 50px; /* Фиксированная минимальная ширина */
-    height: 40px;    /* Фиксированная высота */
-    padding: 8px 12px; /* Уменьшенные отступы */
-    font-size: 14px;   /* Уменьшенный шрифт */
-    border: 2px solid #000 !important; /* Явно задаем границу */
-    background-color: white !important; /* Явно задаем фон */
-  }
-  
-  /* Специальные отступы для XS на мобильных */
-  .size-btn.xs {
-    min-width: 40px;
-    padding: 8px 10px;
-  }
+  background: #000 !important;
+  color: white !important;
 }
 
   .p-1, .smaill-print {
@@ -7063,6 +7034,7 @@ blockquote {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 }
+
 
 
 
