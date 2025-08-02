@@ -5,18 +5,12 @@
 const buttons = document.querySelectorAll(".size-btn");
 
 const handleButtonActivation = function() {
-    if (this.classList.contains("active")) {
-        this.classList.remove("active");
-    } else {
-        buttons.forEach(btn => btn.classList.remove("active"));
-        this.classList.add("active");
-    }
+    buttons.forEach(btn => btn.classList.remove("active"));
+    this.classList.add("active");
 };
 
 buttons.forEach(button => {
-    // Добавляем обработчики для обоих событий
-    button.addEventListener("click", handleButtonActivation);
-    button.addEventListener("touchstart", handleButtonActivation);
+    button.addEventListener("pointerdown", handleButtonActivation);
 });
 
 
@@ -50,4 +44,5 @@ document.addEventListener("DOMContentLoaded", function() {
             }, 2000);
         });
     });
+
 });
