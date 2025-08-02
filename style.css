@@ -5218,6 +5218,24 @@ blockquote {
   transform: scale(0.98); /* Легкое уменьшение при нажатии */
 }
 
+  /* Исправление специально для мобильных */
+@media (max-width: 768px) {
+  .size-btn {
+    min-width: 50px; /* Фиксированная минимальная ширина */
+    height: 40px;    /* Фиксированная высота */
+    padding: 8px 12px; /* Уменьшенные отступы */
+    font-size: 14px;   /* Уменьшенный шрифт */
+    border: 2px solid #000 !important; /* Явно задаем границу */
+    background-color: white !important; /* Явно задаем фон */
+  }
+  
+  /* Специальные отступы для XS на мобильных */
+  .size-btn.xs {
+    min-width: 40px;
+    padding: 8px 10px;
+  }
+}
+
   .p-1, .smaill-print {
     max-width: 390px;
   }
@@ -7045,6 +7063,7 @@ blockquote {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 }
+
 
 
 
