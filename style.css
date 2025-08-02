@@ -5180,32 +5180,6 @@ blockquote {
     margin-top: 120px;
   }
 
-/* Полный сброс и принудительные стили */
-.size-btn, .size-btn * {
-  all: unset !important; /* Ядерный сброс */
-}
-
-.size-btn {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-width: 50px !important;
-  height: 50px !important;
-  padding: 0 15px !important;
-  border: 2px solid #000 !important;
-  background: white !important;
-  color: #333 !important;
-  font: 500 16px/1.5 sans-serif !important;
-  cursor: pointer !important;
-  -webkit-tap-highlight-color: transparent !important;
-  box-sizing: border-box !important;
-  margin: 2px !important;
-}
-
-.size-btn.active {
-  background: #000 !important;
-  color: white !important;
-}
 
   .p-1, .smaill-print {
     max-width: 390px;
@@ -6999,6 +6973,33 @@ blockquote {
   }
 }
 
+.size-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 50px;
+  margin: 2px;
+  border: 2px solid #000 !important;
+  background-color: #fff !important;
+  color: #000 !important;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.size-btn.active {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-color: #000 !important;
+}
+
+.size-btn .size {
+  pointer-events: none;
+}
+
 #w-node-d832c1fc-d7f8-44f0-510a-7f13367e7f66-cca12e97 {
   grid-area: span 1 / span 3 / span 1 / span 3;
   align-self: auto;
@@ -7034,6 +7035,7 @@ blockquote {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 }
+
 
 
 
